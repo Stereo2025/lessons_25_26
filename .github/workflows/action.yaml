@@ -4,9 +4,4 @@ jobs:
   build_and_push:
     runs-on: ubuntu-latest
     steps:
-      - name: clone code
-        uses: actions/checkout@v2
-      - name: docker build
-        run: docker build -t stereo2025/skypro_apython_app:$GITHUB_REF_NAME-$GITHUB_RIN_ID .
-
 
